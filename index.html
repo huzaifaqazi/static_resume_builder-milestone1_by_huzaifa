@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Static Resume Builder By M.Huzaifa</h1>
+        <form id="resumeForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="enter your name"   id="name" required>
+            </div>
+            <div>
+                <label for="fatherName">Father's Name:</label>
+                <input type="text"  placeholder="enter your f.name" id="fatherName" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email"  placeholder="enter your valid e.mail"  id="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel"  placeholder="enter your current number" id="phone">
+            </div>
+            <div>
+                <label for="education">Education:</label>
+                <textarea id="education"  rows="2" required></textarea>
+            </div>
+            <div>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" rows="2" required></textarea>
+            </div>
+            <div>
+                <label for="experience">Experience:</label>
+                <textarea id="experience" rows="4"></textarea>
+            </div>
+            <button type="submit">Generate Resume</button>
+        </form>
+        <div id="resumeOutput" class="resume-output"></div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
